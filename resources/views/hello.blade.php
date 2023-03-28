@@ -1,20 +1,8 @@
+@extends('layouts.main')
+@section('content')
+    <div class="container">
 <h1>HELLO!!!!</h1>
-
-<div style="display: flex; flex-direction: column">
-    <div style="margin: 10px; border: 3px solid lightgray; width: 200px; height: 30px; background-color: deepskyblue">
-<a href="/authorization">
-    Вход
-</a></div>
-    <div style="margin: 10px; border: 3px solid lightgray; width: 200px; height: 30px; background-color: deepskyblue">
-<a href="/category">
-    Категории новостей
-</a></div>
-    <div style="margin: 10px; border: 3px solid lightgray; width: 200px; height: 30px; background-color: deepskyblue">
-<a href="/adding">
-    Добавление новости
-</a></div>
-    <div style="margin: 10px; border: 3px solid lightgray; width: 200px; height: 30px; background-color: deepskyblue">
-<a href="/about">
-    О проектк
-</a></div>
-</div>
+        <div class="alert alert-primary" role="alert">
+            <a href="/about" class="alert-link">О проекте</a>. Нажмите, если нравится.
+        </div>
+@endsection
