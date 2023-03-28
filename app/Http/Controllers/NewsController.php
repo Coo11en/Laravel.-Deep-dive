@@ -7,8 +7,11 @@ use Illuminate\View\View;
 
 class NewsController extends Controller
 {
-    public function index(): View
+    public function index($id): View
     {
-        return \view('news.index');
+        $news = $this->news(1);
+        return \view('news.index', [
+            'news' => $news
+        ]);
     }
 }
