@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('content')
 @foreach ($category as $key => $categorys)
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
+<div class="position-relative overflow-hidden p-3 m-md-3 text-center bg-light">
+    <div class="col-md-5 mx-auto">
         <h1 class="display-4 fw-normal"><?=$categorys?></h1>
         <p class="lead fw-normal">Описание категории!</p>
         <a class="btn btn-outline-secondary" href="/category/<?=$key?>">Отобразить</a>

@@ -9,6 +9,6 @@ class AddingNewsController extends Controller
 {
     public function adding(): View
     {
-        return \view('news.adding');
+        return \view('Admin.news.adding');
     }
 }

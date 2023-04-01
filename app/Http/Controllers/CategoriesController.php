@@ -9,6 +9,6 @@ class CategoriesController extends Controller
     public function category()
     {
         $category = $this->categories();
-        return view('news.category', ['category' => $category]);
+        return view('category.category', ['category' => $category]);
     }
 }
